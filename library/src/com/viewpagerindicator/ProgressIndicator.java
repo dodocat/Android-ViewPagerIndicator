@@ -57,7 +57,7 @@ public class ProgressIndicator extends SeekBar implements PageIndicator {
         this.viewPager = view;
         this.viewPager.setOnPageChangeListener(this);
 
-        this.setMax(viewPager.getAdapter().getCount());
+        this.setMax(viewPager.getAdapter().getCount() - 1);
         this.setCurrentItem(initialPosition);
         this.setOnSeekBarChangeListener(new OnSeekBarChangeListener() {
             @Override
@@ -95,7 +95,7 @@ public class ProgressIndicator extends SeekBar implements PageIndicator {
             Log.i(TAG, String.format("notifyDataSetChanged count %d currentItem %d",
                     viewPager.getAdapter().getCount(), viewPager.getCurrentItem()));
 
-        this.setMax(viewPager.getAdapter().getCount());
+        this.setMax(viewPager.getAdapter().getCount() -1);
     }
 
     @Override
