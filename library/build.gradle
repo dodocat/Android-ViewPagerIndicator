@@ -3,7 +3,7 @@ buildscript {
         mavenCentral()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:0.9.+'
+        classpath 'com.android.tools.build:gradle:0.11.+'
     }
 }
 
@@ -11,13 +11,9 @@ apply plugin: 'android-library'
 
 android {
     compileSdkVersion 19
-    buildToolsVersion = "19.0.3"
+    buildToolsVersion = "19.1.0"
 
     sourceSets {
-        defaultConfig {
-            testPackageName 'com.android.volley.tests'
-        }
-
         main {
             assets.srcDirs       = ['assets']
             res.srcDirs          = ['res']
@@ -26,13 +22,12 @@ android {
             renderscript.srcDirs = ['src']
             java.srcDirs         = ['src']
             manifest.srcFile 'AndroidManifest.xml'
-
         }
-
-        instrumentTest.setRoot('tests')
-        instrumentTest.java.srcDirs = ['tests/src']
     }
 }
 dependencies {
     compile 'com.android.support:support-v4:19.+'
 }
+
+apply from: './release-mvn.gradle'
+
