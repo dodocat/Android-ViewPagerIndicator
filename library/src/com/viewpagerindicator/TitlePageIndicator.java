@@ -2,6 +2,7 @@
  * Copyright (C) 2011 Jake Wharton
  * Copyright (C) 2011 Patrik Akerfeldt
  * Copyright (C) 2011 Francisco Figueiredo Jr.
+ * Copyright (C) 2014 Jing Quanqi
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
