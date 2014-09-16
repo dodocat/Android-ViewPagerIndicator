@@ -11,7 +11,6 @@ Try out the sample application [on the Android Market][10].
 These widgets can also be used in conjunction with [ActionBarSherlock][3]!
 
 
-
 Usage
 =====
 
@@ -69,15 +68,10 @@ indicator widgets.
 You can include this project by [referencing it as a library project][8] in
 Eclipse or ant.
 
-If you are a Maven user you can easily include the library by specifying it as
+If you are a gradle user you can easily include the library by specifying it as
 a dependency:
 
-    <dependency>
-      <groupId>com.viewpagerindicator</groupId>
-      <artifactId>library</artifactId>
-      <version>2.4.1</version>
-      <type>apklib</type>
-    </dependency>
+compile org.quanqi.viewpagerindicator:<VERSION>
 
 This project depends on the `ViewPager` class which is available in the
 [Android Support Library][2] or [ActionBarSherlock][3]. Details for
@@ -90,6 +84,7 @@ Developed By
 ============
 
  * Jake Wharton - <jakewharton@gmail.com>
+ * Jing Quanqi - <jing@quanqi.org>
 
 
 Credits
