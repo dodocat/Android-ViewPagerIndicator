@@ -1,8 +1,8 @@
-apply plugin: 'android-library'
+apply plugin: 'com.android.library'
 
 android {
-    compileSdkVersion 19
-    buildToolsVersion = "19.1.0"
+    compileSdkVersion 21
+    buildToolsVersion = "21.1.1"
 
     sourceSets {
         main {
@@ -17,7 +17,7 @@ android {
     }
 }
 dependencies {
-    compile 'com.android.support:support-v4:19.+'
+    compile 'com.android.support:support-v4:21.0.2'
 }
 
 apply from: './release-mvn.gradle'
