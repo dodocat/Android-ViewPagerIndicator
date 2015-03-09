@@ -20,5 +20,5 @@ dependencies {
     compile 'com.android.support:support-v4:21.0.2'
 }
 
-apply from: './release-mvn.gradle'
+//apply from: './release-mvn.gradle'
 
